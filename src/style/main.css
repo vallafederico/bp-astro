@@ -1,8 +1,8 @@
 /* ------------------------------  Variables */
 :root {
   /* Colors */
-  --color-p: #f00;
-  --color-s: #f00;
+  --color-black: #111111;
+  --color-white: #fefefe;
   /* Spaces */
   --space-s: 0.5rem;
   --space-m: 1rem;
@@ -22,6 +22,12 @@
 /* ---  Global */
 * {
   font-family: "Sohne-web";
+  font-size: 14px;
+}
+
+body {
+  background: var(--color-black);
+  color: var(--color-white);
 }
 
 /* ------------------------------  Webgl */
@@ -44,7 +50,7 @@ main {
 }
 
 .Section {
-  border: 1px solid black;
+  border: 1px solid blue;
 
   /* margin: var(--space-l) var(--space-l); */
 
@@ -56,3 +62,5 @@ main {
   margin-left: var(--space-l);
   margin-right: var(--space-l);
 }
+
+/* ------------------------------  ... */
