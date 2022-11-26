@@ -1,6 +1,5 @@
 ---
 import "../style/main.css";
-import "../style/an.css";
 const { title, route } = Astro.props;
 ---
 
@@ -13,6 +12,7 @@ const { title, route } = Astro.props;
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
   </head>
+  
   <body>
     <div data-wrap>
       <main data-route={route} class="Main">
@@ -23,7 +23,9 @@ const { title, route } = Astro.props;
     <!-- Webgl -->
     <canvas data-gl="c"></canvas>
     <!-- <div data-gl="c"></div> -->
-    <script type="module" src={(await import("../js/app.js?url")).default}
-    ></script>
+
+    <script>
+      import "../js/app.js";
+    </script>
   </body>
 </html>
