@@ -3,7 +3,12 @@
 module.exports = {
   content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
   theme: {
-    // extend: {},
+    extend: {
+      aspectRatio: {
+        imgv: "5/7",
+        imgh: "7/5",
+      },
+    },
     colors: {
       black: "#111",
       white: "#fff",
