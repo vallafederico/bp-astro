@@ -1,7 +1,7 @@
 ---
 import "../style/type.css";
 import "../style/main.css";
-const { title, route } = Astro.props;
+const { title } = Astro.props;
 ---
 
 <!DOCTYPE html>
@@ -16,7 +16,7 @@ const { title, route } = Astro.props;
 
   <body>
     <div data-taxi>
-      <main data-taxi-view={route} class="Main">
+      <main data-taxi-view class="Main">
         <slot />
       </main>
     </div>
