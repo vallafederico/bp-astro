@@ -1,0 +1,9 @@
+---
+const { title, type, imageUrl, canonicalUrl, description } = Astro.props;
+---
+
+<meta property="og:title" content={title} />
+<meta property="og:type" content={type} />
+<meta property="og:url" content={canonicalUrl} />
+<meta property="og:image" content={imageUrl} />
+<meta property="og:description" content={description} />
