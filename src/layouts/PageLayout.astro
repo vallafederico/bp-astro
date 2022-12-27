@@ -1,7 +1,10 @@
 ---
 import "../style/type.css";
 import "../style/main.css";
+
 const { title } = Astro.props;
+
+import Canvas from "../components/Canvas.astro";
 ---
 
 <!DOCTYPE html>
@@ -21,12 +24,6 @@ const { title } = Astro.props;
       </main>
     </div>
 
-    <!-- Webgl -->
-    <canvas data-gl="c"></canvas>
-    <!-- <div data-gl="c"></div> -->
-
-    <script>
-      import "../js/app.js";
-    </script>
+    <Canvas />
   </body>
 </html>
